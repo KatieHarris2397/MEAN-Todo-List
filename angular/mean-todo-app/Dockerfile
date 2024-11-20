@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy the build output to the nginx HTML directory
-COPY ./dist/mean-todo-app /usr/share/nginx/html
+COPY ./dist/mean-todo-app/browser /usr/share/nginx/html
 
 # Copy the nginx configuration template file
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
